@@ -20,7 +20,7 @@ sed -i 's/OpenWrt/K2P/g' package/base-files/files/bin/config_generate
 #sed -i "s/OpenWrt /build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean/default-settings/files/zzz-default-settings
 
 # 5.修改默认主题
-#sed -i ' s/luci-theme-bootstrap/luci-theme-argon/g ' feeds/luci/collections/luci/Makefile
+sed -i ' s/luci-theme-bootstrap/luci-theme-argon/g ' feeds/luci/collections/luci/Makefile
 
 # 6.设置ttyd免登录
 #sed -i 's/\/bin\/login/\/bin\/login -f root/' /etc/config/ttyd
